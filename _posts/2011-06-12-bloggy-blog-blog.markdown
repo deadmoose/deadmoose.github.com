@@ -30,3 +30,6 @@ but this is at least a bit prettier and more functional than the more basic
 Jekyll bits I stumbled across. If anybody in the non-existant peanut gallery
 there is more confident with things and wants to volunteer some time to help
 me nail some more of this down, drop me a line.
+
+**Update:** Yep, looks like things have drifted around and it's all working.
+Hooray! Now to churn out some actual content...
