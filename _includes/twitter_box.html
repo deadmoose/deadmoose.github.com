@@ -1,0 +1,38 @@
+{% if twitterWidgetIncluded  %}
+{% else %}
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    {% assign twitterWidgetIncluded = true %}
+{% endif %}
+<div class="box">
+    <script>
+        new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 4,
+            interval: 6000,
+            width: 200,
+            height: 200,
+            theme: {
+                shell: {
+                    background: '#9bb27d',
+                    color: '#000000'
+                },
+                tweets: {
+                    background: '#d8f7ad',
+                    color: '#000000',
+                    links: '#007000'
+                }
+            },
+            features: {
+                scrollbar: true,
+                loop: false,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: false,
+                behavior: 'all'
+            }
+        }).render().setUser('{{ twitterUser }}').start();
+    </script>
+</div>
+

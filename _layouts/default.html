@@ -24,9 +24,9 @@
             {{ site.author }}<br />
             {{ site.email }}<br />
             <a href="http://github.com/deadmoose/">github.com/deadmoose</a><br />
-            <a href="http://twitter.com/deadmoose/">twitter.com/deadmoose</a><br />
-
             <a href="{{ site.atom }}"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
         </div>
+        {% assign twitterUser = 'deadmoose' %}
+        {% include twitter_box.html %}
     </div>
 </div>
