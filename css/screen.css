@@ -1,0 +1,75 @@
+html, body {
+    background-color: #d8f7ad;
+    background-image: url('/images/grid.png');
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#site {
+    margin: 0 auto;
+    text-align: left;
+    width: 940px;
+}
+
+#content {
+    float: left;
+    width: 700px;
+}
+
+#pagination {
+    width: 700px;
+    float: left;
+}
+
+#sidebar {
+    float: right;
+    width: 220px;
+}
+
+.box {
+    background-image: url('/images/transparent_light_green.png');
+    border: 1px solid #9bb27d;
+    padding: .5em;
+    margin-top: 1.5em;
+}
+
+a:link { color: #007000; }
+a:visited { color: #003000; }
+a:hover, a:active { color: #00aa00; }
+
+.post_title {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.post_title a:link,
+.post_title a:visited,
+.post_title a:hover,
+.post_title a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.post_date {
+    font-weight: bold;
+    font-size: 75%;
+    margin-bottom: 2em;
+}
+
+.prev {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.next {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+.post_header {
+    background-image: url('/images/transparent_dark_green.png');
+}

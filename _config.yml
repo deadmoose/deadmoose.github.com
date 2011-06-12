@@ -1,0 +1,9 @@
+markdown: rdiscount
+pygments: true
+paginate: 10
+
+title: Deadmoose
+author: David Hoover
+email: karma@deadmoose.com
+url: http://blog.deadmoose.com/
+atom: http://blog.deadmoose.com/atom.xml
