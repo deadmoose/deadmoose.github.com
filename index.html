@@ -11,14 +11,10 @@ title: Deadmoose
 {% if paginator.next_page or paginator.previous_page %}
     <div id="pagination" class="box">
         {% if paginator.next_page %}
-            <div class="next"><a href="/page{{ paginator.next_page }}">&larr;&nbsp;Older&nbsp;Posts</a></div>
+            <div class="next"><a href="{{ paginator.next_page_path }}">&larr;&nbsp;Older&nbsp;Posts</a></div>
         {% endif %}
         {% if paginator.previous_page %}
-            {% if paginator.previous_page != 1 %}
-                <div class="prev"><a href="/page{{ paginator.previous_page }}">Newer&nbsp;Posts&nbsp;&rarr;</a></div>
-            {% else %}
-                <div class="prev"><a href="/">Newer&nbsp;Posts&nbsp;&rarr;</a></div>
-            {% endif %}
+            <div class="prev"><a href="{{ paginator.previous_page_path }}">Newer&nbsp;Posts&nbsp;&rarr;</a></div>
         {% endif %}
     </div>
 {% endif %}
