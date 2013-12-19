@@ -1,3 +1,5 @@
+{% if site.show_drafts %}
+{% else %}
 <script type="text/javascript">
     var disqus_shortname = '{{ site.disqus_shortname }}';
 
@@ -8,3 +10,4 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
+{% endif %}

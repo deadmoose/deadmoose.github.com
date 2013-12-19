@@ -1,8 +1,12 @@
 <div class="box">
+    {% if site.show_drafts %}
+    TWITTER BOX
+    {% else %}
     <a class="twitter-timeline" href="https://twitter.com/deadmoose"
         height="150"
         data-chrome="nofooter transparent"
         data-link-color="#007000"
         data-widget-id="413472427201396736">Tweets by @deadmoose</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    {% endif %}
 </div>
