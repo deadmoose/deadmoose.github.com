@@ -73,3 +73,7 @@ a:hover, a:active { color: #00aa00; }
 .post_header {
     background-image: url('/images/transparent_dark_green.png');
 }
+
+.disqus_link {
+    text-align: right;
+}

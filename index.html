@@ -5,6 +5,7 @@ title: Deadmoose
 
 {% for page in paginator.posts %}
     {% assign content = page.content %}
+    {% assign include_disqus_link = true %}
     {% include post_body.html %}
 {% endfor %}
 
@@ -18,3 +19,5 @@ title: Deadmoose
         {% endif %}
     </div>
 {% endif %}
+
+{% include disqus_comment_count.html %}

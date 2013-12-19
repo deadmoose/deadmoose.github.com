@@ -4,6 +4,7 @@ paginate: 10
 
 title: Deadmoose
 author: David Hoover
+disqus_shortname: deadmoose
 email: karma@deadmoose.com
 url: http://blog.deadmoose.com/
 atom: http://blog.deadmoose.com/atom.xml

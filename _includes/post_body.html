@@ -4,4 +4,10 @@
         <div class="post_date">{{ page.date | date_to_string }}</div>
     </div>
     {{ content }}
+
+    {% if include_disqus_link %}
+    <div class="disqus_link">
+        <a href="{{ page.url}}#disqus_thread">Comment</a>
+    </div>
+    {% endif %}
 </div>
